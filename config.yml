@@ -1,0 +1,56 @@
+baseURL: "https://sample.com/"
+languageCode: "en-us"
+title: "Image Processing"
+description: "How do I do this?"
+theme: "PaperMod"
+googleAnalytics: G-3KCJ1RRWM3
+
+menu:
+  main:
+    - name: Search
+      url: search/
+      weight: 5
+
+params:
+  env: production
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+#  showtoc: false
+#  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+#    favicon: "/favicon.ico"
+#    favicon16x16: "/favicon-16x16.png"
+#    favicon32x32: "/favicon-32x32.png"
+#    apple_touch_icon: "/apple-touch-icon.png"
+#    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "Sample"
+    icon: /apple-touch-icon.png
+    iconHeight: 28
+
+outputs:
+  home:
+    - HTML
+    - JSON
+  page:
+    - HTML
+    - JSON
+  section:
+    - HTML
+    - JSON
