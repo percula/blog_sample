@@ -1,8 +1,10 @@
+{{ $cover := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.cover.image ) }}
+{{ printf "%#v" $cover }}
 {
   "title": "{{ .Title }}",
   "author": "{{ .Params.author }}",
   "image": {
-    "url" : "{{.Params.cover.image }}",
+    "url" : "{{ $cover.Resize "360x" }}",
     "caption" : "{{ .Params.cover.caption }}",
     "alt" : "{{ .Params.cover.alt }}"
   },
